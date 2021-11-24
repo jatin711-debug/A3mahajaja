@@ -1,0 +1,12 @@
+.gridArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "info area1"
+  "info area2";
+  gap: 5px;
+  }
+  .info {grid-area: info; }
+  .area1 {grid-area: area1;}
+  .area2 {grid-area: area2;}
