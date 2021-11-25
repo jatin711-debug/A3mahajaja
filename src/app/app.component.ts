@@ -15,6 +15,6 @@ export class AppComponent {
     program: 'Computer System Technician - Software Engineer',
     email:'mahajaja@sheridancollege.ca',
     country: 'Canada',
-    picture: 'https://avatars2.githubusercontent.com/u/991601086?s=460&v=4'
+    picture: 'assets/images/img.jpg'
   }
 }

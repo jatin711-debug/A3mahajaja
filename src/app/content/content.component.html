@@ -1,11 +1,32 @@
 <section class="gridArea">
-  <div class="info">
-
+  <div class="info ">
+      <h3>Current Date {{date | date }}</h3>
+      <h3>My Name: {{mainData.name}}</h3>
+      <h3>My Sheridan Program: {{mainData.program}}</h3>
+      <h3>My Sheridan Emal: {{mainData.email}}</h3>
+      <img id="myimg" src= {{mainData.picture}}>
   </div>
-  <div class="area1">
-
+  <div class="area1 radial" [ngClass]="{
+    'fall':season === 'Fall' || season === 'fall',
+    'spring':season === 'spring' || season === 'Spring',
+    'winter':season === 'winter' || season === 'Winter',
+    'summer':season === 'summer' || season === 'Summer'
+  }">
+    <h5>Enter Your Favourite Season: </h5>
+    <input [(ngModel)]="season">
+    <hr>
+    <p *ngIf="(season) === 'Fall' || (season) === 'winter' || (season) === 'fall' || (season) === 'Winter' || (season) === 'Summer' || (season) === 'summer' || (season) === 'Spring'|| (season) === 'spring' ;  else noId" [ngStyle]="{color: 'white'}">It is currently {{season}}, Winter Will be Soon </p>
+  <ng-template #noId>
+    <p [ngStyle]="{'font-style':'italic'}">I like {{season}} Better</p>
+  </ng-template>
   </div>
-  <div class="area2">
-
+  <hr>
+  <div class="area2 back">
+    <button [ngStyle]="{'color':'purple'}" (click)="btn_1()">
+      Thick Solid Round Purple
+    </button>
+    <button [ngStyle]="{'color':'pink'}" (click)="btn_2()">
+      Thick Double Square Pink
+    </button>
   </div>
 </section>

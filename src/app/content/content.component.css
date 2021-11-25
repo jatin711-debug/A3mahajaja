@@ -7,6 +7,63 @@
   "info area2";
   gap: 5px;
   }
-  .info {grid-area: info; }
-  .area1 {grid-area: area1;}
-  .area2 {grid-area: area2;}
+  .info {grid-area: info;
+    text-align: center;
+    background-color: bisque;
+   }
+  .area1 {grid-area: area1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  input{
+    height: 10px;
+    width: auto;
+  }
+  .area2 {grid-area: area2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img
+{
+  width: 100px;
+  height: auto;
+}
+
+.backGrad{
+  background-image: linear-gradient(to righ,yellow,violet);
+}
+
+.fall
+{
+  background-image: linear-gradient(to right, red,orange);
+}
+
+.winter{
+  background-image: linear-gradient(to right, yellow,green);
+}
+
+.summer{
+  background-image: linear-gradient(to right,blue,indigo);
+}
+
+.spring{
+  background-image: linear-gradient(to right, violet,azure);
+}
+
+
+.back{
+  background-color: aqua;
+}
+
+button{
+  margin : 10px;
+  padding: 5px;
+}
+
+
+/* .radial{
+  background-image: linear-gradient(to right, rgb(221, 223, 97),rgb(59, 208, 36));
+} */
+
